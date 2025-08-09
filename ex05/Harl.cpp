@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 21:58:26 by julcalde          #+#    #+#             */
-/*   Updated: 2025/08/09 22:30:04 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/08/09 22:35:50 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,10 @@ void	Harl::error()
 	std::cout << "This is unacceptable! I want to speak to the manager, NAAHW!1!!\n" << std::endl;
 }
 
+// The complain method processes the complaint level and calls the appropriate function
 void	Harl::complain(std::string level)
 {
+	// Using a function pointer array to map complaint levels to their corresponding methods
 	typedef void (Harl::*ComplaintFunction)();
 	struct Complaint
 	{
@@ -58,6 +60,7 @@ void	Harl::complain(std::string level)
 		ComplaintFunction function;
 	};
 	
+	// Array of complaint levels and their corresponding functions
 	Complaint complaints[] = {
 		{"DEBUG", &Harl::debug},
 		{"INFO", &Harl::info},
@@ -65,11 +68,14 @@ void	Harl::complain(std::string level)
 		{"ERROR", &Harl::error}
 	};
 
+	// Check if the level matches any of the predefined complaint levels
 	for (int i = 0; i < 4; ++i) {
         if (level == complaints[i].level) {
             (this->*complaints[i].function)();
-            return;
+            return ;
         }
     }
+	
+	// If no match is found, print an unknown message
 	std::cout << "[ UNKNOWN ] Harl did not prepare drama for this level.\n" << std::endl;
 }
