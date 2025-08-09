@@ -1,4 +1,4 @@
-NAME =		braiiiiiiinnnzzzz
+NAME =		Moar_brainz
 
 CXX =		c++
 
