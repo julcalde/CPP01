@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 15:47:18 by julcalde          #+#    #+#             */
-/*   Updated: 2025/08/09 16:01:26 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/08/09 16:07:10 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 
 # include <string>
 
+/*
+	* Zombie class definition
+	* This class represents a Zombie with a name and the ability to announce itself.
+	* It includes a constructor, destructor, and methods for announcing the zombie.
+ */
 class Zombie
 {
 	private:
