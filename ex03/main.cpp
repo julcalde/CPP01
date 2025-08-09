@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 20:12:57 by julcalde          #+#    #+#             */
-/*   Updated: 2025/08/09 21:10:58 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/08/09 21:18:41 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main(void)
 {
-		// Test with HumanA which cannot have a null weapon
+		/* Test with HumanA which cannot have a null weapon */
 		Weapon banana = Weapon("brown banana");
 		HumanA vrushank("Vrushank", banana);
 		// Vrushank can attack with the weapon
@@ -25,10 +25,9 @@ int main(void)
 		// Vrushank can attack with the new weapon type
 		vrushank.attack();
 		
-		// Test with HumanB which can have a null weapon
+		/* Test with HumanB which can have a null weapon */
 		banana = Weapon("black banana");
 		HumanB jonas("Jonas");
-
 		// Jonas has no waeapon at the beginning
 		jonas.attack();
 		// Jonas can set a weapon later
