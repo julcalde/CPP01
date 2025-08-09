@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 21:56:59 by julcalde          #+#    #+#             */
-/*   Updated: 2025/08/09 22:06:23 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/08/09 22:27:50 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,9 @@ class Harl
 		void	error(void);
 
 	public:
+		Harl();
+		~Harl();
+		
 		void	complain(std::string level);
 };
 
