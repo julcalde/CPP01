@@ -1,18 +1,18 @@
-NAME =		hi_this_is_brain
+NAME =		Unnecessary_violence
 
 CXX =		c++
 
 CXXFLAGS =	-Wall -Wextra -Werror -std=c++98
 
-SRCS =		main.cpp /
-			Weapon.cpp /
-			HumanA.cpp /
+SRCS =		main.cpp \
+			Weapon.cpp \
+			HumanA.cpp \
 			HumanB.cpp
 
 OBJS =		$(SRCS:.cpp=.o)
 
-HEADERS = 	Weapon.hpp /
-			HumanA.hpp /
+HEADERS =	Weapon.hpp \
+			HumanA.hpp \
 			HumanB.hpp
 
 # ANSI color codes
